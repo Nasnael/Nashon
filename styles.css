@@ -11,9 +11,7 @@
 }
 
 /* root  global  variables  */
-:root{
-    --padding-container:   2em 4em ;
-}
+
 
 body{
     width: 100vw;
