@@ -1,0 +1,14 @@
+let currentIndex = 0;
+const images = document.querySelectorAll('.image-item');
+
+function scrollToNextImage() {
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Go back to the first image
+  }
+  images[currentIndex].scrollIntoView({ behavior: 'smooth' });
+}
+
+// Scroll every 3 seconds
+setInterval(scrollToNextImage, 3000);
