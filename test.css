@@ -1,0 +1,81 @@
+/* Card container using CSS Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal-width columns */
+    gap: 20px;
+    /* Space between the cards */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    /* Set a maximum width for large screens */
+}
+
+/* Card styling */
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Divide card into three equal rows */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Each section inside the card */
+.card-icon,
+.card-heading,
+.card-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Background colors for each section */
+.card-icon {
+    background-color: #ffc107;
+    /* Yellow for icon section */
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.card-heading {
+    background-color: #072146;
+    /* Deep blue for heading */
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-description {
+    background-color: #f4f4f4;
+    /* Light grey for description */
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        /* Single column on very small screens */
+    }
+}

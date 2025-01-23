@@ -11,6 +11,11 @@
 }
 
 /* root  global  variables  */
+:root{
+    --padding-container:   1em 4em ;
+    --contact-bg: #ecb834;
+    --padding-btn:  10px 10px
+}
 
 
 body{
@@ -22,15 +27,12 @@ body{
         /* Prevent horizontal scroll due to extra content */
         font-family: Arial, sans-serif;
         /* Default font, customize as needed */
-        
-       
-        
 }
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:   var(--padding-container);
+  padding:  var(--padding-container);
     background-color: #072146;
     /* New theme color */
     color: #ffffff;
@@ -47,7 +49,6 @@ nav span.logo {
     font-size: 24px;
     font-weight: bold;
     color: #ffc107;
-   
 
 }
 
@@ -96,10 +97,6 @@ nav ul li a:hover {
 }
 
 /* Phone number styling */
-nav span.phone-number {
-    font-weight: bold;
-    font-size: 16px;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -134,7 +131,7 @@ nav span.phone-number {
     overflow: hidden;
     display: flex;
     align-items: center;
-        padding: var(--padding-container);
+       
     /* Center content vertically */
 }
 
@@ -252,14 +249,15 @@ nav span.phone-number {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    background-color: #072146;
+    /* padding: 20px; */
+    /* background-color: #072146; */
     /* Deep blue theme color */
-
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+background-color:white;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    margin: 20px 100px;
     text-align: center;
     color: #ffffff;
+   
     /* White text for contrast */
 }
 
@@ -270,6 +268,9 @@ nav span.phone-number {
     line-height: 1.4;
     margin: 0;
     letter-spacing: 1px;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /* Add a glowing effect */
@@ -286,6 +287,8 @@ nav span.phone-number {
 
 
 
+
+
 /* Services section styling */
 .services {
     padding: var(--padding-container);
@@ -299,44 +302,68 @@ nav span.phone-number {
 
 /* Cards container styling */
 .cards-container {
+    background-color: #000;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+   
+        grid-template-columns: repeat(3, 1fr);
+        /* Three equal-width columns */
+        gap: 20px;
+        /* Space between the cards */
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 1200px;
+        /* Set a maximum width for large screens */
 }
 
 /* Individual card styling */
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    height: 20rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+   
+}
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 .card img {
+    width: 78px;
+       
+        border-radius: 50%;
+        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      
+} 
 
-    margin-bottom: 15px;
-}
-
-.card h3 {
+.card h1 {
     font-size: 20px;
     color: #072146;
-    margin-bottom: 10px;
+    background-color: #ecb834;
     text-transform: uppercase;
+   
+    align-content: center;
 }
 
 .card p {
     font-size: 16px;
-    color: #333;
+    color: #072146;
     line-height: 1.6;
+    margin-bottom: 10px;
+    background-color: ;
 }
 
-/* Hover effect on cards */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -970,7 +997,7 @@ max-width: 400px;
 
  /*    fixing   css  */
  .card-img {
-     width: 100%;
+     /* width: 100%; */
 
  }
 
@@ -1065,3 +1092,7 @@ max-width: 400px;
     padding: 0;
 }
 
+.logo   >  a   {
+text-decoration: none;
+color: #ffc107;
+}
