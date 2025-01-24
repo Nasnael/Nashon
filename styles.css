@@ -250,13 +250,13 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     /* padding: 20px; */
-    /* background-color: #072146; */
+    background-color: rgb(243, 238, 238);
     /* Deep blue theme color */
-background-color:white;
+
     /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
-    margin: 20px 100px;
+    /* margin: 20px 100px; */
     text-align: center;
-    color: #ffffff;
+    color: black;
    
     /* White text for contrast */
 }
@@ -268,7 +268,7 @@ background-color:white;
     line-height: 1.4;
     margin: 0;
     letter-spacing: 1px;
-    background-color: #ccc;
+    /* background-color:whitesmoke; */
     padding: 20px;
     border-radius: 20px;
 }
@@ -302,7 +302,7 @@ background-color:white;
 
 /* Cards container styling */
 .cards-container {
-    background-color: #000;
+    /* background-color: #000; */
     display: grid;
    
         grid-template-columns: repeat(3, 1fr);
@@ -317,24 +317,42 @@ background-color:white;
 
 /* Individual card styling */
 .card {
-    background-color: #ffffff;
+    background-color:#fff;
     /* padding: 20px; */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 
+              -2px -2px 4px rgba(255, 255, 255, 0.8); 
+border: 1px solid #ddd;
+    /* Subtle border */
     text-align: center;
     transition: transform 0.4s ease-in-out;
     height: 20rem;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
+    border: 2px solid whitesmoke;
+    color: #072146;
    
 }
 .card:hover {
-    transform: scale(1);
+    transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    
+    background-color: #072146;
+  color: white;
 }
-
+/* .holder{
+    background-color: greenyellow;
+    border-radius: 50%;
+    border-radius: 50%;
+        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #ecb834;
+        width: 70px;
+        display: grid;
+} */
 .card img {
     width: 78px;
        
@@ -343,21 +361,24 @@ background-color:white;
         justify-content: center;
         align-items: center;
         align-content: center;
+        background-color: #ecb834;
       
 } 
 
 .card h1 {
     font-size: 20px;
-    color: #072146;
-    background-color: #ecb834;
+    /* color: #072146; */
+    /* background-color: #ecb834; */
     text-transform: uppercase;
    
     align-content: center;
 }
-
+.card h1:hover{
+    /* color: #f8f9fa; */
+}
 .card p {
     font-size: 16px;
-    color: #072146;
+    color: white;
     line-height: 1.6;
     margin-bottom: 10px;
     background-color: ;
