@@ -40,7 +40,7 @@ nav {
     font-family: 'Arial', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     top: 0;
-    position: sticky;
+    /* position: sticky; */
     z-index: 100;
 }
 
@@ -300,6 +300,71 @@ nav ul li a:hover {
 
 
 
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* background-color: aquamarine; */
+}
+
+.service:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service img {
+    width: 50%;
+    height: 25rem;
+}
+
+.service-description {
+    padding: 20px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.service-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img,
+    .service-description {
+        width: 100%;
+    }
+
+    .service-description {
+        text-align: center;
+    }
+}
+
+
+
+
 /* Cards container styling */
 .cards-container {
     /* background-color: #000; */
@@ -317,7 +382,7 @@ nav ul li a:hover {
 
 /* Individual card styling */
 .card {
-    background-color:#fff;
+    background-color:whitesmoke;
     /* padding: 20px; */
     border-radius: 10px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -373,15 +438,11 @@ border: 1px solid #ddd;
    
     align-content: center;
 }
-.card h1:hover{
-    /* color: #f8f9fa; */
-}
 .card p {
     font-size: 16px;
-    color: white;
+    color: whitesmoke;
     line-height: 1.6;
     margin-bottom: 10px;
-    background-color: ;
 }
 
 
@@ -612,26 +673,6 @@ border: 1px solid #ddd;
                     line-height: 2;
                 /* Infinite animation loop */
             }
-    
-
-
-.ctaa-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:#ffc107;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.ctaa-button:hover {
-    
-background-color: #ff1a1a;
-}
-
-
 /* photo and form  */
 
 
@@ -677,7 +718,7 @@ background-color: #ff1a1a;
     font-size: 16px;
 }
 
-.submit-button {
+.service-button {
     padding: 10px 20px;
     background-color: #ff4d4d;
     color: white;
@@ -750,11 +791,7 @@ text-align: center;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 z-index: 2;
 max-width: 400px;
-    
-   
-    
-   
-    
+     
 }
 
 .cta-section {
@@ -792,19 +829,6 @@ max-width: 400px;
 
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff4d4d;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ff1a1a;
-}
 .services h2 {
     font-size: 32px;
     color: #072146;
@@ -840,7 +864,7 @@ max-width: 400px;
  .servicephoto p{
 
      text-align: center;
-     color:#003366;
+     color:black;
      /* Bright yellow for a pop effect */
      animation: popInsideOut 3s infinite;
      margin-bottom: 20px;
@@ -1017,10 +1041,8 @@ max-width: 400px;
 
 
  /*    fixing   css  */
- .card-img {
-     /* width: 100%; */
 
- }
+ 
 
  .card-img>img {
      width: 70px;
