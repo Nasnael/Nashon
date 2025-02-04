@@ -4,100 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .service {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .service:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .service img {
-            width: 50%;
-            height: auto;
-        }
-
-        .service-description {
-            padding: 20px;
-            width: 50%;
-        }
-
-        .service-description h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .service-description p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #666;
-        }
-
-        @media (max-width: 768px) {
-            .service {
-                flex-direction: column;
-            }
-
-            .service img, .service-description {
-                width: 100%;
-            }
-
-            .service-description {
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Service 1 -->
-        <div class="service">
-            <img src="images/icons-f/diagnostic.png" alt="Service 1">
-            <div class="service-description">
-                <h3>Soundbar Repair</h3>
-                <p>We specialize in repairing Bose soundbars, addressing issues such as power failures, distorted sound, and connectivity problems. Let us restore the sound quality you love.</p>
-            </div>
-        </div>
+    <div class="image-container">
+    <img src="your-image.jpg" alt="Bose Repair" class="background-image">
+    <p class="overlay-text">We specialize in repairing a wide range of Bose products, ensuring high-quality service and expert care.</p>
+</div>
 
-        <!-- Service 2 -->
-        <div class="service">
-            <img src="images/servicephotos/sevice-images/servicebars.png" alt="Service 2">
-            <div class="service-description">
-                <h3>Bass Module Repair</h3>
-                <p>Our experts fix Bose bass modules to bring back the deep, powerful bass your audio system deserves. From connectivity to performance issues, we’ve got you covered.</p>
-            </div>
-        </div>
+<style>
+    .image-container {
+        position: relative;
+        width: 100%; /* Adjust as needed */
+        max-width: 800px; /* Example width */
+        margin: 0 auto; /* Center the image */
+    }
 
-        <!-- Service 3 -->
-        <div class="service">
-            <img src="images/servicephotos/sevice-images/motherb.png" alt="Service 3">
-            <div class="service-description">
-                <h3>Diagnostics</h3>
-                <p>Not sure what's wrong with your device? Our comprehensive diagnostics service identifies the root cause of issues, providing you with a detailed report and repair options.</p>
-            </div>
-        </div>
-    </div>
+    .background-image {
+        width: 100%; /* Makes image responsive */
+        height: auto;
+        display: block;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%; /* Centers vertically */
+        left: 50%; /* Centers horizontally */
+        transform: translate(-50%, -50%); /* Ensures true centering */
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        color: #fff; /* White text */
+        padding: 15px 20px;
+        border-radius: 8px; /* Smooth edges */
+        text-align: center;
+        font-size: 18px;
+        width: 80%; /* Adjust width */
+    }
+</style>
+
+   
+<style>
+    
+</style>
+
 </body>
 </html>
