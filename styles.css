@@ -304,10 +304,9 @@ nav ul li a:hover {
     /* Optional: Center content vertically */
     justify-content: center;
     /* Optional: Center content horizontally */
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+ 
+    
+   
 
 
 }
@@ -389,13 +388,21 @@ nav ul li a:hover {
         font-size: 30px;
         line-height: 2;
         border-radius: 12px;
+        margin-top: 0;
 
 }
 .services {
     padding: var(--padding-container);
-  
+ 
     text-align: center;
     width: 100%;
+
+}
+.services a{
+    
+    text-decoration: none;
+
+    
 
 }
 
@@ -403,8 +410,8 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    /* background-color: #ffc107; */
-    border-top: 10px solid #ffc107;
+    
+    border-top: 
 }
 
 .service {
@@ -417,7 +424,7 @@ nav ul li a:hover {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: var(--padding-container);
-    /* background-color: aquamarine; */
+    
 }
 
 .service:nth-child(even) {
@@ -468,7 +475,9 @@ nav ul li a:hover {
      /* Sets a max width for large screens */
      margin: 0 auto;
      /* Centers the div with equal left/right margins */
-     padding: 20px;
+     padding: var(--padding-container);
+     border-bottom: 10px solid #ffc107;
+     align-content: space-between;
      
  }
 
@@ -570,6 +579,7 @@ border: 1px solid #ddd;
     background-color: #072146;
   color: white;
 }
+/* using this to add background to card icon */
 /* .holder{
     background-color: greenyellow;
     border-radius: 50%;
@@ -850,12 +860,21 @@ border: 1px solid #ddd;
     padding: 40px;
     background-color: #f8f9fa;
     flex-wrap: wrap;
+
+    padding: var(--padding-container);
 }
 
 .form-section,
 .info-section {
     flex: 1;
     max-width: 45%;
+   
+}
+
+.info-section{
+  
+    padding: 50px;
+    line-height: 2;
 }
 
 .form-section h2,
@@ -884,19 +903,21 @@ border: 1px solid #ddd;
     font-size: 16px;
 }
 
-.service-button {
-    padding: 10px 20px;
-    background-color:red;
+.submit-button {
+    padding: 20px 40px;
+    background-color:#072146;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: var(--padding-btn);
 }
 
 .submit-button:hover {
-    background-color: #ff1a1a;
+    background-color: #ffc107;
+    color: #000;
 }
 
 
@@ -915,85 +936,44 @@ border: 1px solid #ddd;
     text-decoration: underline;
 }
 
-/* services */
-
-
-
-
-
-
-
-
-.cta-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px;
-    background-color: #f8f9fa;
-}
-
-.cta-card {
-    background-color:whitesmoke;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.cta-card h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.cta-card p {
-    /* font-size: 16px;
-    margin-bottom: 20px;
-    color: #ccc; */
-    font-size: 25px;
-    line-height: 2;
-    color: #072146;
-    margin: 0;
-
-}
-
-.services h2 {
-    font-size: 32px;
-    color: #072146;
-    margin-top: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
  /* aboutme */
 
- .our-story {
-     text-align: center;
-     margin-bottom: 50px;
-     background: #000;
- }
+ 
+.our-story {
+        background: #fff;
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #072146;
+    }
+
+
+
+ 
 
  .our-story h2 {
+    text-align: center;
      font-size: 2.5rem;
      color: #001f3f;
-     /* Deep blue */
-     margin-bottom: 10px;
-     padding: 30px;
-     margin-top: 10px;
+    /* background-color: blue; */
+    margin-bottom: 40px;
+    margin-top: 40px;
+       
+    
  }
+
 
  .our-story p {
      font-size: 1.2rem;
      color: #555;
      max-width: 600px;
      margin: 0 auto;
+    
+   
  }
 
  /* Our Values Section */
@@ -1159,24 +1139,8 @@ border: 1px solid #ddd;
     width: 100%;
   }
 
-  .our-story  {
-   background:  #fff;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     color: #072146;
-  }
-
-   .our-story  >   h2  {
   
-    padding: 0;
-    margin: 0;
-    width: 100%;
-   }
+   
    
 .our-story> p {
 
