@@ -401,11 +401,25 @@ nav ul li a:hover {
 .services a{
     
     text-decoration: none;
-
-    
-
 }
+.t-areas{
+    /* border: 1px solid grey; */
+    padding: 20px;
+    align-items: center;
+        justify-content: center;
+        align-content: center;
+        border-radius: 30%;
+        background: #e9d086;
+    }
+ 
 
+
+.t-areas li{
+    padding: 4px;
+    /* background: #e9d086; */
+    margin-left: 20px;
+    /* border-radius: 50%; */
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
